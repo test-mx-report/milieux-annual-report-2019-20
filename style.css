@@ -1,0 +1,67 @@
+body,
+html {
+width: 100%;
+height: 100%;
+font-family: AnoRegular-Regular;
+src: url("AnoRegular-Regular.otf");
+}
+h2{
+font-family: AnoBlack-Regular;
+src: url("AnoBlack-Regular.otf");
+max-width: 200px!important;
+text-align: center;
+font-size: 14px;
+}
+p{
+font-family: AnoRegular-Regular;
+src: url("AnoRegular-Regular.otf");
+max-width: 200px!important;
+text-align: center;
+font-size: 14px;
+line-height: 1.6;
+}
+.center {
+margin: auto;
+width: 200px;
+height: 200px;
+border: 0px solid #73AD21;
+padding: 250px 0;
+}
+canvas {
+position:fixed;
+top:0;
+left:0;
+z-index:1;
+}
+#contenu {
+position:relative;
+z-index:2;
+}
+/*
+p{
+margin-top: 100px!important;
+padding-left: 140px;
+max-width: 340px!important;
+text-align: justify;
+font-size: 18px;
+}
+*/
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: white;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #C2BCB0;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #C2BCB0;
+}
+sub {
+background-color: rgba(250,170, 0, 1);
+}
