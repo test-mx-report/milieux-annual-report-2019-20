@@ -96,7 +96,6 @@ for (const ref of nextRefs) {
     e.preventDefault()
     const id = e.target.hash.split('#')[1]
     const current = getNextItem(id)
-
     // const title = current.title
     if (current.media.type === 'image') {
       const image = current.media.src
@@ -164,6 +163,48 @@ const data = {
         id: '5_1NLIV45Xw'
       },
       text: 'Technoculture, Art and Games (TAG) brought Minecraft and Bauhaus together by reflexively building a custom modded multiplayer survival mode game lasting 30 days. Builders modernized a village in Minecraft by interpreting design principles from the historical Bauhaus, as they encountered the problems of resource extraction and exploitation, the politics of urban renewal, assumptions about material logistics and infrastructure, the negotiation of idealized plans and the situatedness of actions.'
+    }
+  ],
+  modernmeetspostmoderncrisis: [
+    {
+      title: 'Video of IF Reformatted gallery opening',
+      media: {
+        type: 'youtube',
+        id: '8sfBtqw0fMc'
+      },
+      text: 'AbTeC welcomed approximately 30 visitors to a vernissage in Second Life, and another 80 guests who livestreamed the event. The inaugural exhibition features artwork from 11 indigenous artists that were reformatted to be showcased online after COVID-19 shut down the Milieux Institute spaces.'
+    },
+    {
+      title: 'Barbara sewing masks',
+      media: {
+        type: 'image',
+        src: 'powerofthespill.jpg'
+      },
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mauris odio, ultrices et ligula id, tincidunt ornare ex. Pellentesque nec blandit urna. Phasellus viverra maximus orci, id dictum neque porttitor et. Aenean pharetra condimentum nisi, id congue nibh placerat sit amet. Nam eu lorem blandit, condimentum lacus quis, dictum nisi. Nunc eleifend est elementum ultrices euismod. Nunc pretium et est.'
+    },
+    {
+      title: 'New Nature',
+      media: {
+        type: 'image',
+        src: 'powerofthespill.jpg'
+      },
+      text: 'In May, the Milieux Institute partnered with the Geothe-Institut Montreal to launch a program of international exchange over the course of 2020 called New Nature. The series of encounters engage 25 leading climate scientists, artists and technologists from Canada, Germany, Mexico and the U.S. in conversation about immersive media and climate science. Two students and two faculty from Milieux participated in the event.'
+    },
+    {
+      title: 'Olivia McGhilchrist Black Quantum Futurism adapted for online showcase',
+      media: {
+        type: 'youtube',
+        id: '8sfBtqw0fMc'
+      },
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mauris odio, ultrices et ligula id, tincidunt ornare ex. Pellentesque nec blandit urna. Phasellus viverra maximus orci, id dictum neque porttitor et. Aenean pharetra condimentum nisi, id congue nibh placerat sit amet. Nam eu lorem blandit, condimentum lacus quis, dictum nisi. Nunc eleifend est elementum ultrices euismod. Nunc pretium et est.'
+    },
+    {
+      title: 'ACT elder abuse escape room',
+      media: {
+        type: 'image',
+        src: 'powerofthespill.jpg'
+      },
+      text: 'Researchers from Ageing + Communication + Technologies (ACT), part of the Participatory Media Cluster, worked with activist from a Montreal-based advocacy group to build and operate an ‘escape room.’ Players were immersed in the perspective of an older person dealing with real issues of psychological abuse, the denial of rights, financial abuse, and physical abuse. Trained facilitators led debrief session after the game, during which players (who tended to be younger) raised a number of complex ethical questions and shared diverse perspectives. Their findings became extremely relevant as the pandemic placed systemic ageism and elder abuse at the center of public discourse.'
     }
   ]
 }
