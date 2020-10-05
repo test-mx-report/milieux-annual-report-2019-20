@@ -8,7 +8,6 @@ if (typeof process.env.GOOGLE_ANALYTICS_ID !== 'undefined' && process.env.GOOGLE
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', process.env.GOOGLE_ANALYTICS_ID, 'auto');
   ga('send', 'pageview');
   /* eslint-enable */
@@ -39,16 +38,16 @@ const getPrevItem = (id) => {
   return (data[id][index])
 }
 
-const setTitle = (containerId, title) => {
-  const parent = document.getElementById(containerId)
-  const ref = parent.querySelector('[data-type=title]')
-  if (typeof title !== 'undefined' && title !== '') {
-    ref.innerHTML = title
-    ref.parentElement.style.display = ''
-  } else {
-    ref.parentElement.style.display = 'none'
-  }
-}
+// const setTitle = (containerId, title) => {
+//   const parent = document.getElementById(containerId)
+//   const ref = parent.querySelector('[data-type=title]')
+//   if (typeof title !== 'undefined' && title !== '') {
+//     ref.innerHTML = title
+//     ref.parentElement.style.display = ''
+//   } else {
+//     ref.parentElement.style.display = 'none'
+//   }
+// }
 
 const setImage = (containerId, image) => {
   const parent = document.getElementById(containerId)
