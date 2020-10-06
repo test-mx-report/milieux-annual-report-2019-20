@@ -69,7 +69,7 @@ section {
 }
 
 .bg-amarillo {
-  background-color: rgba(225, 197, 88, 0.8);
+  background-color: rgba(225, 197, 88, 1);
   /* background-color: #EEB53C; */
 }
 .amarillo {
@@ -81,7 +81,7 @@ section {
   /* border-color: #EEB53C; */
 }
 .bg-aqua-verde {
-  background-color: rgba(189, 216, 196, 0.8);
+  background-color: rgba(189, 216, 196, 1);
   /* background-color: #AEFFD8; */
 }
 .aqua-verde {
