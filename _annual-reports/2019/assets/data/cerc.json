@@ -4,6 +4,7 @@
  "children": [
   {
    "name": "members",
+   "img":  "ursula.png",
    "children": [
     {
       "member": "Ursula Eicker",
@@ -51,6 +52,7 @@
   },
   {
    "name": "Members2",
+   "img":  "jing_hu.png",
    "children": [
     {
       "member": "Ursula Eicker",
@@ -97,7 +99,8 @@
   ]
   },
   {
-   "name": "Members2",
+   "name": "Members3",
+   "img":  "alice_jarry.png",
    "children": [
     {
       "member": "Ursula Eicker",

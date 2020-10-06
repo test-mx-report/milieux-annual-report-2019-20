@@ -1,6 +1,7 @@
 import 'tachyons/css/tachyons.min.css'
 import './sketch.js'
 import './highlights.js'
+import '../_annual-reports/2019/assets/css/highlights.css'
 import '../_annual-reports/2019/assets/css/style.css'
 
 if (typeof process.env.GOOGLE_ANALYTICS_ID !== 'undefined' && process.env.GOOGLE_ANALYTICS_ID !== '') {
