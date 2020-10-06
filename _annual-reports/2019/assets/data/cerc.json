@@ -1,0 +1,147 @@
+{
+ "name": "NEXT-GEN CITIES",
+  "img": "next_gen_1.png",
+ "children": [
+  {
+   "name": "members",
+   "children": [
+    {
+      "member": "Ursula Eicker",
+      "name": "~",
+      "link": "#",
+      "img":  "ursula.png",
+      "size": 40000
+    },
+    {
+      "member": "Jing Hu",
+      "name": "~",
+      "link": "#",
+      "img":  "jing_hu.png",
+      "size": 40000
+    },
+    {
+      "member": "Alice Jarry",
+      "name": "~",
+      "link": "#",
+      "img":  "alice_jarry.png",
+      "size": 40000
+    },
+    {
+      "member": "Chunyan Lai",
+      "name": "~",
+      "link": "#",
+      "img":  "chunyan_lai.png",
+      "size": 40000
+    },
+    {
+      "member": "Mohamed Ouf",
+      "name": "~",
+      "link": "#",
+      "img":  "mohamed.png",
+      "size": 40000
+    },
+    {
+      "member": "Carly Ziter",
+      "name": "~",
+      "link": "#",
+      "img":  "carly.png",
+      "size": 40000
+    }
+  ]
+  },
+  {
+   "name": "Members2",
+   "children": [
+    {
+      "member": "Ursula Eicker",
+      "name": "~",
+      "link": "#",
+      "img":  "ursula.png",
+      "size": 40000
+    },
+    {
+      "member": "Jing Hu",
+      "name": "~",
+      "link": "#",
+      "img":  "jing_hu.png",
+      "size": 40000
+    },
+    {
+      "member": "Alice Jarry",
+      "name": "~",
+      "link": "#",
+      "img":  "alice_jarry.png",
+      "size": 40000
+    },
+    {
+      "member": "Chunyan Lai",
+      "name": "~",
+      "link": "#",
+      "img":  "chunyan_lai.png",
+      "size": 40000
+    },
+    {
+      "member": "Mohamed Ouf",
+      "name": "~",
+      "link": "#",
+      "img":  "mohamed.png",
+      "size": 40000
+    },
+    {
+      "member": "Carly Ziter",
+      "name": "~",
+      "link": "#",
+      "img":  "carly.png",
+      "size": 40000
+    }
+  ]
+  },
+  {
+   "name": "Members2",
+   "children": [
+    {
+      "member": "Ursula Eicker",
+      "name": "~",
+      "link": "#",
+      "img":  "ursula.png",
+      "size": 40000
+    },
+    {
+      "member": "Jing Hu",
+      "name": "~",
+      "link": "#",
+      "img":  "jing_hu.png",
+      "size": 40000
+    },
+    {
+      "member": "Alice Jarry",
+      "name": "~",
+      "link": "#",
+      "img":  "alice_jarry.png",
+      "size": 40000
+    },
+    {
+      "member": "Chunyan Lai",
+      "name": "~",
+      "link": "#",
+      "img":  "chunyan_lai.png",
+      "size": 40000
+    },
+    {
+      "member": "Mohamed Ouf",
+      "name": "~",
+      "link": "#",
+      "img":  "mohamed.png",
+      "size": 40000
+    },
+    {
+      "member": "Carly Ziter",
+      "name": "~",
+      "link": "#",
+      "img":  "carly.png",
+      "size": 40000
+    }
+   ]
+  }
+ ]
+}
