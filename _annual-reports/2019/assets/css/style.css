@@ -81,27 +81,27 @@ section {
   /* border-color: #EEB53C; */
 }
 .bg-aqua-verde {
-  background-color: rgba(189, 216, 196, 1);
+  background-color: #bbe9d0;
   /* background-color: #AEFFD8; */
 }
 .aqua-verde {
-  color: #bdd8c4;
+  color: #bbe9d0;
   /* color: #AEFFD8; */
 }
 .b--aqua-verde {
-  border-color: #bdd8c4;
+  border-color: #bbe9d0;
   /* border-color: #AEFFD8; */
 }
 .bg-mauve {
-  background-color: #d3bac0;
+  background-color: #c2aeb3;
   /* background-color: #B59DA4; */
 }
 .mauve {
-  color: #d3bac0;
+  color: #c2aeb3;
   /* color: #B59DA4; */
 }
 .b--mauve {
-  border-color: #d3bac0;
+  border-color: #c2aeb3;
   /* border-color: #B59DA4; */
 }
 .bg-brown-gray {
