@@ -53,7 +53,8 @@ window.onload = () => {
       document.getElementById('cluster-highlights-sidebar').style.opacity = '1'
       document.getElementById('project-highlights-sidebar').style.opacity = '1'
       console.log(modal)
-      const dataset = e.path[1].dataset
+      console.log(e)
+      const dataset = e.target.parentNode.dataset
       console.log(dataset)
       document.getElementById('highlights-modal-parent-title').innerHTML = dataset.parent
       document.getElementById('highlights-modal-parent-url').href = dataset.parentUrl
