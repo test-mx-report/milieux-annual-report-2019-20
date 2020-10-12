@@ -234,13 +234,6 @@ section {
   opacity: 0.9;
 }
 
-.cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .more {
   display: none;
 }
@@ -396,7 +389,15 @@ section {
   } */
 }
 
+.fixed-bg-left, .fixed-bg-right, .fixed-bg-wide {
+  background-attachment: fixed!important;
+}
+
 @media only screen and (max-width: 30em) {
+  .fixed-bg-left, .fixed-bg-right, .fixed-bg-wide {
+    background-attachment: local!important;
+  }
+
   #partners a {
 
   }
