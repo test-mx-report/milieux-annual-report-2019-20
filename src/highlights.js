@@ -1,15 +1,15 @@
 import * as d3 from 'd3'
+import { textwrap } from 'd3-textwrap'
+
+d3.textwrap = textwrap
 
 // some colour variables
-var tcBlack = '#130C0E'
 
 // rest of vars
 var ventana = window
 var w = ventana.innerWidth
 var h = ventana.innerHeight
 var maxNodeSize = 30
-var x_browser = 20
-var y_browser = 20
 var root
 
 var vis
@@ -17,9 +17,19 @@ var force = d3.layout.force()
 
 const imgDir = '/_annual-reports/2019/assets/img/highlights/'
 
-vis = d3.select('#vis').append('svg').attr('width', w).attr('height', h)
+vis = d3.select('#cluster-highlights').append('svg').attr('width', w).attr('height', h)
 
-d3.json('/_annual-reports/2019/assets/data/cerc.json', function (json) {
+window.onresize = () => {
+  w = ventana.innerWidth
+  h = ventana.innerHeight
+  vis.attr('width', w).attr('height', h)
+}
+
+const wrap = d3.textwrap()
+  .bounds({ height: 480, width: 150 })
+  .method('tspans')
+
+d3.json('/_annual-reports/2019/assets/data/cluster-highlights.json', function (json) {
   root = json
   root.fixed = true
   root.x = w / 2
@@ -59,7 +69,8 @@ function update () {
   path.enter().insert('svg:path')
     .attr('class', 'link')
   // .attr("marker-end", "url(#end)")
-    .style('stroke', '#AAE5EE')
+    // .style('stroke', '#AAE5EE')
+    .style('stroke', '#fff')
 
   // Exit any old paths.
   path.exit().remove()
@@ -72,58 +83,83 @@ function update () {
   var nodeEnter = node.enter().append('svg:g')
     .attr('class', 'node')
     .attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')' })
-    .on('click', click)
+    // .on('click', click)
     .call(force.drag)
 
   // Append a circle
   nodeEnter.append('svg:circle')
     .attr('r', function (d) { return Math.sqrt(d.size) / 21 || 4.5 })
-    .style('fill', '#AAE5EE')
+    // .style('fill', '#AAE5EE')
+    .attr('fill', '#fff')
 
   // Append images
-  var images = nodeEnter.append('svg:image')
-    .attr('xlink:href', function (d) { return imgDir + d.img })
+  var images = nodeEnter.append('a')
+    .attr('data-micromodal-trigger', function (d) { if (d.event) return 'highlights-modal' })
+    .attr('data-cluster', function (d) { return d.parent })
+    .attr('data-parentUrl', function (d) { return d.parentUrl })
+    .attr('data-event', function (d) { return d.event })
+    .attr('data-description', function (d) { return d.description })
+    .attr('data-image', function (d) { return d.img })
+    .attr('data-embed', function (d) { return d.embed })
+    .append('svg:image')
+    .attr('xlink:href', function (d) { if (d.img) return imgDir + d.img.replace('.jpg', '_circle.png') })
     .attr('x', function (d) { return -25 })
     .attr('y', function (d) { return -25 })
     .attr('height', 50)
     .attr('width', 50)
 
+  nodeEnter.append('text')
+    .text(function (d) { if (d.cluster) return d.cluster })
+    .style('text-anchor', 'middle')
+    .style('font-size', '1rem')
+    .style('font-weight', 'bold')
+    .attr('fill', '#130C0E')
   // make the image grow a little on mouse over and add the text details on click
   // var setEvents = images
   images
   // Append member text
-    .on('click', function (d) {
-      d3.select('#highlights-member').html(d.member)
-      d3.select('#highlights-name').html(d.name)
-      d3.select('#highlights-link').html('Take me to ' + "<a href='" + d.link + "' >" + d.member + ' web page ⇢' + '</a>')
-    })
+  //  .on('click', function (d) {
+  //  })
 
-    .on('mouseenter', function () {
+    .on('mouseover', function (d, i, j, k) {
       // select element in current context
-      d3.select(this)
-        .transition()
-        .attr('x', function (d) { return -60 })
-        .attr('y', function (d) { return -60 })
-        .attr('height', 100)
-        .attr('width', 100)
+      if (d.event) {
+        d3.select(this)
+          .transition()
+          .attr('x', -50)
+          .attr('y', -50)
+          .attr('height', 100)
+          .attr('width', 100)
+        d3.select('#highlights-sidebar').classed('show', true)
+        d3.select('#highlights-name').text(d.event)
+        d3.select('#highlights-member').text(d.parent)
+      }
     })
   // set back
-    .on('mouseleave', function () {
+    .on('mouseleave', function (d) {
       d3.select(this)
         .transition()
-        .attr('x', function (d) { return -25 })
-        .attr('y', function (d) { return -25 })
+        .attr('x', -25)
+        .attr('y', -25)
         .attr('height', 50)
         .attr('width', 50)
+      d3.select('#highlights-sidebar').classed('show', false)
+      // if (d.cluster) d3.select('#highlights-member').text('')
+      // if (d.parent) d3.select('#highlights-member').text('')
+      // if (d.event) d3.select('#highlights-name').text('')
     })
 
   // Append member name on roll over next to the node as well
   nodeEnter.append('text')
-    .attr('class', 'nodetext')
-    .attr('x', x_browser)
-    .attr('y', y_browser + 15)
-    .attr('fill', tcBlack)
-    .text(function (d) { return d.member })
+    .attr('class', 'hidden')
+    .attr('x', 30)
+    .attr('y', 45)
+    // .style('text-anchor', 'end')
+    .style('font-size', '1rem')
+    .style('font-weight', 'bold')
+    .attr('fill', '#130C0E')
+    .text(function (d) { if (d.event) return d.event })
+    .call(wrap)
 
   // Exit any old nodes.
   node.exit().remove()
@@ -131,6 +167,9 @@ function update () {
   // Re-select for update.
   path = vis.selectAll('path.link')
   node = vis.selectAll('g.node')
+
+  const text = d3.selectAll('text')
+  text.call(wrap)
 
   function tick () {
     path.attr('d', function (d) {
@@ -161,17 +200,16 @@ function nodeTransform (d) {
 /**
  * Toggle children on click.
  */
-function click (d) {
-  if (d.children) {
-    d._children = d.children
-    d.children = null
-  } else {
-    d.children = d._children
-    d._children = null
-  }
-
-  update()
-}
+// function click (d) {
+//   if (d.children) {
+//     d._children = d.children
+//     d.children = null
+//   } else {
+//     d.children = d._children
+//     d._children = null
+//   }
+//   update()
+// }
 
 /**
  * Returns a list of all nodes under the root.

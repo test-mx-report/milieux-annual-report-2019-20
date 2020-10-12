@@ -39,7 +39,9 @@
   },
   "dependencies": {
     "d3": "^3.5.17",
+    "d3-textwrap": "^3.0.0",
     "express": "^4.17.1",
+    "micromodal": "^0.4.6",
     "p5": "^1.1.9",
     "tachyons": "^4.12.0"
   }
