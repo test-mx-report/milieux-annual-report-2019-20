@@ -68,6 +68,13 @@ section {
   opacity: 0.9;
 }
 
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .more {
   display: none;
 }
