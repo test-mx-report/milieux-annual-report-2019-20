@@ -14,11 +14,11 @@ path.link {
   cursor: pointer;
 }
 
-aside#highlights-sidebar {
+aside#cluster-highlights-sidebar, aside#project-highlights-sidebar {
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-aside#highlights-sidebar.show {
+aside#cluster-highlights-sidebar.show, aside#project-highlights-sidebar.show {
   opacity: 1;
 }

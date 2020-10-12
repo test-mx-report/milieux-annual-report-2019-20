@@ -1,6 +1,7 @@
 import 'tachyons/css/tachyons.min.css'
 import './sketch.js'
-import './highlights.js'
+import './cluster-highlights.js'
+import './project-highlights.js'
 import '../_annual-reports/2019/assets/css/micromodal.css'
 import '../_annual-reports/2019/assets/css/highlights.css'
 import '../_annual-reports/2019/assets/css/nav.css'
@@ -17,9 +18,27 @@ if (typeof process.env.GOOGLE_ANALYTICS_ID !== 'undefined' && process.env.GOOGLE
   ga('send', 'pageview');
   /* eslint-enable */
 }
+/* eslint-disable */
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+/* eslint-enable */
 
 const body = document.body
-const imgDir = '/_annual-reports/2019/assets/img/highlights/'
+// const imgDir = '/_annual-reports/2019/assets/img/highlights/'
 
 window.onload = () => {
   MicroModal.init({
@@ -31,23 +50,37 @@ window.onload = () => {
       document.getElementsByTagName('html')[0].style.overflow = 'hidden'
       document.body.style.overflow = 'none'
       console.info(`${modal.id} is shown`)
-      document.getElementById('highlights-sidebar').style.opacity = '1'
+      document.getElementById('cluster-highlights-sidebar').style.opacity = '1'
+      document.getElementById('project-highlights-sidebar').style.opacity = '1'
       console.log(modal)
       const dataset = e.path[1].dataset
       console.log(dataset)
-      document.getElementById('highlights-modal-parent-title').innerHTML = dataset.cluster
+      document.getElementById('highlights-modal-parent-title').innerHTML = dataset.parent
       document.getElementById('highlights-modal-parent-url').href = dataset.parentUrl
       document.getElementById('highlights-modal-event-title').innerHTML = dataset.event
-      document.getElementById('highlights-modal-image').src = imgDir + dataset.image
+      // document.getElementById('highlights-modal-image').src = imgDir + dataset.image
       document.getElementById('highlights-modal-description').innerHTML = dataset.description
+      const media = JSON.parse(dataset.media)
+      console.log(media)
+      if (typeof media !== 'undefined') {
+        if (media.type === 'video') {
+          setVideo('highlights-modal', media.host, media.id)
+        } else if (media.type === 'twitter') {
+          setTweet('highlights-modal', media.tweet)
+        } else {
+          setImage('highlights-modal', media.src)
+        }
+      }
       document.getElementById('modal-container').scrollTop = 0
+
       // for (const i in document.links) document.links[i].onfocus = document.links[i].blur
     },
     onClose: (modal) => {
       document.getElementsByTagName('html')[0].style.overflow = 'auto'
       document.body.style.overflow = 'auto'
       console.info(`${modal.id} is hidden`)
-      document.getElementById('highlights-sidebar').style.opacity = null
+      document.getElementById('cluster-highlights-sidebar').style.opacity = null
+      document.getElementById('project-highlights-sidebar').style.opacity = null
     }
   })
 }
@@ -129,7 +162,7 @@ const setImage = (containerId, image) => {
   const parent = document.getElementById(containerId)
   const ref = parent.querySelector('[data-type=media]')
   if (typeof image !== 'undefined' && image !== '') {
-    ref.innerHTML = ref.innerHTML = '<div class="mb3"><img data-type="image" src="/_annual-reports/2019/assets/img/' + containerId + '/' + image + '" class="fit-cover fit-top shadow-4"></div>'
+    ref.innerHTML = ref.innerHTML = '<div class="mb1"><img data-type="image" src="/_annual-reports/2019/assets/img/' + containerId + '/' + image + '" class="fit-cover fit-top shadow-4"></div>'
     ref.parentElement.style.display = ''
   } else {
     ref.parentElement.style.display = 'none'
@@ -140,11 +173,12 @@ const setTweet = (containerId, tweet) => {
   const parent = document.getElementById(containerId)
   const ref = parent.querySelector('[data-type=media]')
   if (typeof tweet !== 'undefined' && tweet !== '') {
-    ref.innerHTML = ref.innerHTML = '<div class="aspect-ratio aspect-ratio--16x9 mb3"><div class="aspect-ratio--object">' + tweet + '</div></div>'
+    ref.innerHTML = ref.innerHTML = '<div>' + tweet + '</div></div>'
     ref.parentElement.style.display = ''
   } else {
     ref.parentElement.style.display = 'none'
   }
+  window.twttr.widgets.load(ref)
 }
 
 const setVideo = (containerId, host, videoId) => {
@@ -153,20 +187,20 @@ const setVideo = (containerId, host, videoId) => {
   if (host === 'youtube') {
     if (typeof videoId !== 'undefined' && videoId !== '') {
       ref.parentElement.style.display = ''
-      ref.innerHTML = '<div class="aspect-ratio aspect-ratio--16x9 mb3"><iframe width="100%" class="aspect-ratio--object shadow-4" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+      ref.innerHTML = '<div class="aspect-ratio aspect-ratio--16x9 mb1"><iframe width="100%" class="aspect-ratio--object shadow-4" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
     } else {
       ref.parentElement.style.display = 'none'
     }
   } else if (host === 'vimeo') {
     if (typeof videoId !== 'undefined' && videoId !== '') {
       ref.parentElement.style.display = ''
-      ref.innerHTML = '<div class="aspect-ratio aspect-ratio--16x9 mb3"><iframe src="https://player.vimeo.com/video/' + videoId + '" class="aspect-ratio--object shadow-4" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>'
+      ref.innerHTML = '<div class="aspect-ratio aspect-ratio--16x9 mb1"><iframe src="https://player.vimeo.com/video/' + videoId + '" class="aspect-ratio--object shadow-4" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>'
     } else {
       ref.parentElement.style.display = 'none'
     }
   } else if (host === 'facebook') {
     ref.parentElement.style.display = ''
-    ref.innerHTML = '<div class="aspect-ratio aspect-ratio--16x9 mb3"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCU4thSpace%2Fvideos%2F' + videoId + '%2F&show_text=0&width=560" width="100%" height="315" class="aspect-ratio--object shadow-4" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div>'
+    ref.innerHTML = '<div class="aspect-ratio aspect-ratio--16x9 mb1"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCU4thSpace%2Fvideos%2F' + videoId + '%2F&show_text=0&width=560" width="100%" height="315" class="aspect-ratio--object shadow-4" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></div>'
   } else {
     ref.parentElement.style.display = 'none'
   }

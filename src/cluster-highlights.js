@@ -5,25 +5,30 @@ d3.textwrap = textwrap
 
 // some colour variables
 
-// rest of vars
-var ventana = window
-var w = ventana.innerWidth
-var h = ventana.innerHeight
+const w = window
+const d = document
+const e = d.documentElement
+const g = d.getElementsByTagName('body')[0]
+let x = w.innerWidth || e.clientWidth || g.clientWidth
+let y = w.innerHeight || e.clientHeight || g.clientHeight
+
 var maxNodeSize = 30
 var root
 
 var vis
 var force = d3.layout.force()
 
-const imgDir = '/_annual-reports/2019/assets/img/highlights/'
+const imgDir = '/_annual-reports/2019/assets/img/highlights-modal/'
 
-vis = d3.select('#cluster-highlights').append('svg').attr('width', w).attr('height', h)
+vis = d3.select('#cluster-highlights').append('svg').attr('width', x).attr('height', y)
 
-window.onresize = () => {
-  w = ventana.innerWidth
-  h = ventana.innerHeight
-  vis.attr('width', w).attr('height', h)
+function updateWindow () {
+  x = w.innerWidth || e.clientWidth || g.clientWidth
+  y = w.innerHeight || e.clientHeight || g.clientHeight
+
+  vis.attr('width', x).attr('height', y)
 }
+window.onresize = updateWindow
 
 const wrap = d3.textwrap()
   .bounds({ height: 480, width: 150 })
@@ -32,8 +37,8 @@ const wrap = d3.textwrap()
 d3.json('/_annual-reports/2019/assets/data/cluster-highlights.json', function (json) {
   root = json
   root.fixed = true
-  root.x = w / 2
-  root.y = h / 2
+  root.x = x / 2
+  root.y = y / 2
 
   // Build the path
   var defs = vis.insert('svg:defs')
@@ -59,7 +64,7 @@ function update () {
     .linkDistance(70)
     .friction(0.45)
     .linkStrength(function (l, i) { return 1 })
-    .size([w, h])
+    .size([x, y])
     .on('tick', tick)
     .start()
 
@@ -95,12 +100,11 @@ function update () {
   // Append images
   var images = nodeEnter.append('a')
     .attr('data-micromodal-trigger', function (d) { if (d.event) return 'highlights-modal' })
-    .attr('data-cluster', function (d) { return d.parent })
+    .attr('data-parent', function (d) { return d.parent })
     .attr('data-parentUrl', function (d) { return d.parentUrl })
     .attr('data-event', function (d) { return d.event })
     .attr('data-description', function (d) { return d.description })
-    .attr('data-image', function (d) { return d.img })
-    .attr('data-embed', function (d) { return d.embed })
+    .attr('data-media', function (d) { return JSON.stringify(d.media) })
     .append('svg:image')
     .attr('xlink:href', function (d) { if (d.img) return imgDir + d.img.replace('.jpg', '_circle.png') })
     .attr('x', function (d) { return -25 })
@@ -130,9 +134,9 @@ function update () {
           .attr('y', -50)
           .attr('height', 100)
           .attr('width', 100)
-        d3.select('#highlights-sidebar').classed('show', true)
-        d3.select('#highlights-name').text(d.event)
-        d3.select('#highlights-member').text(d.parent)
+        d3.select('#cluster-highlights-sidebar').classed('show', true)
+        d3.select('#cluster-highlights-name').text(d.event)
+        d3.select('#cluster-highlights-member').text(d.parent)
       }
     })
   // set back
@@ -143,10 +147,10 @@ function update () {
         .attr('y', -25)
         .attr('height', 50)
         .attr('width', 50)
-      d3.select('#highlights-sidebar').classed('show', false)
-      // if (d.cluster) d3.select('#highlights-member').text('')
-      // if (d.parent) d3.select('#highlights-member').text('')
-      // if (d.event) d3.select('#highlights-name').text('')
+      d3.select('#cluster-highlights-sidebar').classed('show', false)
+      // if (d.cluster) d3.select('#cluster-highlights-member').text('')
+      // if (d.parent) d3.select('#cluster-highlights-member').text('')
+      // if (d.event) d3.select('#cluster-highlights-name').text('')
     })
 
   // Append member name on roll over next to the node as well
@@ -192,8 +196,8 @@ function update () {
  * http://bl.ocks.org/mbostock/1129492
  */
 function nodeTransform (d) {
-  d.x = Math.max(maxNodeSize, Math.min(w - (d.imgwidth / 2 || 16), d.x))
-  d.y = Math.max(maxNodeSize, Math.min(h - (d.imgheight / 2 || 16), d.y))
+  d.x = Math.max(maxNodeSize, Math.min(x - (d.imgwidth / 2 || 16), d.x))
+  d.y = Math.max(maxNodeSize, Math.min(y - (d.imgheight / 2 || 16), d.y))
   return 'translate(' + d.x + ',' + d.y + ')'
 }
 

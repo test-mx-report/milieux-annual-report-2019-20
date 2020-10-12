@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body class="ano-regular bg-brown-gray">
+<body class="ano-regular bg-brown-gray overflow-x-hidden overflow-x-auto-ns">
 
   <a id="toggleMenu" href="#" aria-label="Menu" class="link fixed z-999 pv3 ph3 top-0 right-0 hover-bg-white">
     <svg width="25px" height="18px" viewBox="0 3 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -19,7 +19,7 @@
     </svg>
   </a>
 
-  <nav id="menu" class="fixed vh-100 tc z-5 right-0 top-0 bg-azul shadow-2 open pv4 flex flex-column justify-center">
+  <nav id="menu" class="fixed vh-100 tc z-5 right-0 top-0 bg-azul-90 shadow-2 open pv4 flex flex-column justify-center">
     <h2 class="pr5 ph3 pl4 f4">Milieux Annual Report 2019-20</h2>
     <ul class="pr5 ph3 pl4 f4 list">
       <li><a href="#directors-message" class="w-100 dib ph4 pv3 link black hover-bg-white">Director's Message</a></li>
@@ -29,17 +29,18 @@
       <li><a href="#modernmeetspostmoderncrisis" class="w-100 dib ph4 pv3 link black hover-bg-white">Modern Meets Post-modern Crisis</a></li>
       <li><a href="#partners" class="w-100 dib ph4 pv3 link black hover-bg-white">Major Partners</a></li>
     </ul>
-
-    </ul>
   </nav>
 
   <main class="mw9 center">
-    <div id="p5-container">
+    <div id="p5-container" class="relative">
       <div class="w-100 flex items-center justify-center vh-100 tc">
         <div class="bg-white-0 pa4">
           <img src="/_annual-reports/2019/assets/img/milieux_logo.png"/>
           <p class="mt3 mb0 lh-copy">Milieux Institute for Technology, Art and Culture<br>2019-20 Annual Report Highlights</p>
         </div>
+      </div>
+      <div class="absolute right-0 bottom-0 w4 ma3">
+        <img class="w-100" src="/_annual-reports/2019/assets/img/concordia-logo.png">
       </div>
     </div>
 
@@ -70,12 +71,23 @@
       </div>
     </div>
 
-    <div id="cluster-highlights" data-index="0" class="relative fixed-bg cover xvh-100" style="background: url('/_annual-reports/2019/assets/img/bg/event-highlights.png') no-repeat center center fixed;">
+    <div id="cluster-highlights" data-index="0" class="relative fixed-bg cover vh-100" style="background: url('/_annual-reports/2019/assets/img/bg/event-highlights.png') no-repeat center center fixed;">
       <div class="absolute top-0 left-1">
-        <h2 class=" mb0 pa0 pl4 w-100"><span class="dib lh-copy mt5 pv2 ph3 bg-azul">Highlights 2019-2020</span></h2>
-        <aside id="highlights-sidebar" class="dn db-ns mt4 mb0 pa0 ml4 pt2 pb3 ml4 w5 bg-azul">
-          <span id="highlights-member" class="dib lh-solid mt0 ph3 pv2 b"></span>
-          <span id="highlights-name" class="dib lh-solid mt0 ph3 pv2 b"></span>
+        <h2 class=" mb0 pa0 pl4 w-100"><span class="dib lh-copy mt5 pv2 ph3 bg-azul">Cluster Highlights</span></h2>
+        <aside id="cluster-highlights-sidebar" class="dn db-ns mt4 mb0 pa0 ml4 pt2 pb3 ml4 w5 bg-azul">
+          <span id="cluster-highlights-member" class="dib lh-solid mt0 ph3 pv2 b"></span>
+          <span id="cluster-highlights-name" class="dib lh-solid mt0 ph3 pv2 b"></span>
+          <span class="dib lh-copy mt0 ph3 pv2">Click the image for more info.</span>
+        </aside>
+      </div>
+    </div>
+
+    <div id="project-highlights" data-index="0" class="relative fixed-bg cover vh-100" style="background: url('/_annual-reports/2019/assets/img/bg/event-highlights.png') no-repeat center center fixed;">
+      <div class="absolute top-0 left-1">
+        <h2 class=" mb0 pa0 pl4 w-100"><span class="dib lh-copy mt5 pv2 ph3 bg-azul">Project Highlights</span></h2>
+        <aside id="project-highlights-sidebar" class="dn db-ns mt4 mb0 pa0 ml4 pt2 pb3 ml4 w5 bg-azul">
+          <span id="project-highlights-member" class="dib lh-solid mt0 ph3 pv2 b"></span>
+          <span id="project-highlights-name" class="dib lh-solid mt0 ph3 pv2 b"></span>
           <span class="dib lh-copy mt0 ph3 pv2">Click the image for more info.</span>
         </aside>
       </div>
@@ -105,7 +117,7 @@
               <img src="/_annual-reports/2019/assets/img/milieuxbauhaus/bauhaus.gif" class="fit-cover">
             </div>
             <div>
-              <p data-type="text" class="f7 center bg-white pa3 lh-copy" style="display: none;"></p>
+              <p data-type="text" class="f7 center bg-white mt2 pa3 lh-copy" style="display: none;"></p>
             </div>
           </div>
           <a class="arrow-next vh-50 ml3 link dim contain bg-center w2 h2" href="#milieuxbauhaus" style="background-image: url('/_annual-reports/2019/assets/img/arrow.svg'); transform: rotate(180deg);"></a>
@@ -138,7 +150,7 @@
               <img src="/_annual-reports/2019/assets/img/modernmeetspostmoderncrisis/rubycoders.jpg" class="fit-cover">
             </div>
             <div>
-              <p data-type="text" class="f7 center bg-mauve pa3 lh-copy" style="display: none;"></p>
+              <p data-type="text" class="f7 center mt2 bg-mauve pa3 lh-copy" style="display: none;"></p>
             </div>
           </div>
           <a class="arrow-next vh-50 ml3 link dim contain bg-center w2 h2" href="#modernmeetspostmoderncrisis" style="background-image: url('/_annual-reports/2019/assets/img/arrow.svg'); transform: rotate(180deg);"></a>
@@ -148,7 +160,7 @@
     </div>
 
     <div id="partners" data-index="0" class="relative pt5 pt0-ns flex items-center flex-none-ns fixed-bg cover min-vh-100" style="background: url('/_annual-reports/2019/assets/img/bg/partners.png') no-repeat center center fixed;">
-      <h2 class="absolute mb0 pa0 pl4 top-0 left-1 w-100"><span class="dib lh-copy mt5 pv2 ph3 bg-white">Major Partners</span></h2>
+      <h2 class="absolute mb0 pa0 pl4 top-0 left-1"><span class="dib lh-copy mt5 pv2 ph3 bg-white">Major Partners</span></h2>
 
       <div class="flex-ns flex-column-ns pa5-ns pa4 vh-100-ns w-75-ns w-100 center items-center justify-between">
         <div class="relative w-100 pv3 pv0-ns tc"><a href="https://www.cqam.org/" target="_blank" class="absolute-ns link black b dim" style="left:95%;">CQAM</div>
@@ -177,13 +189,65 @@
         </header>
         <div id="highlights-modal-content">
           <div id="highlights-modal-content">
+            <div id="highlights-modal-media" data-type="media"></div>
             <img id="highlights-modal-image" class="w-100">
-            <p id="highlights-modal-description" class="pv2 f6 lh-copy"></p>
+            <p id="highlights-modal-description" class="pb2 f6 lh-copy"></p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <footer class="bg-white black pt5 pa4">
+    <div class="flex-ns f6">
+      <div class="w-100 ph3 mb4">
+        <h4>Contact</h4>
+        <p class="f6 ma0 pa0 lh-copy">
+          Milieux Institute for Arts, Culture and Technology at Concordia University<br/>
+          1515 Rue Sainte-Catherine W.<br/>
+          EV Building, 11.455<br/>
+          Montréal, Quebec, Canada<br/>
+          H3G 2W1
+        </p>
+      </div>
+      <div class="w-100 ph3 mb4">
+        <h4>Milieux</h4>
+        <ul class="list pa0 ma0 pr3">
+          <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/contact/">Contact</li>
+          <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/annual-reports/">Milieux Annual Reports</a></li>
+          <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="w-100 ph3 mb4">
+        <h4>Clusters</h4>
+        <div class="flex-l">
+          <ul class="list pa0 ma0  pr3">
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/indigenous-futures/">Indigenous Futures</a></li>
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/media-history/">Media History</a></li>
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/participatory-media/">Participatory Media</a></li>
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/leparc-the-performing-arts-research-cluster/">Performing Arts (LePARC)</a></li>
+          </ul>
+          <ul class="list pa0 ma0  pr3">
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/post-image-2/">Post Image</a></li>
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/speculative-life/">Speculative Life</a></li>
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/technoculture-arts-and-games/">Technoculture, Art & Games</a></li>
+            <li class="pv1"><a class="link black underline-hover" href="https://milieux.concordia.ca/textiles-and-materiality/">Textiles & Materiality</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 pb4">
+      <div class="ma3 w4">
+        <img class="w-100" src="/_annual-reports/2019/assets/img/concordia-logo.png">
+      </div>
+      <div class="ma3 w4">
+        <img class="w-100" src="/_annual-reports/2019/assets/img/milieux-logo.png">
+      </div>
+    </div>
+    <p class="mt0 ma3 f7">© Copyright 2020 | Milieux | All rights reserved.</p>
+
+
+  <footer>
 
 </body>
 </html>
