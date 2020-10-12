@@ -7,6 +7,10 @@
   src: url('/_annual-reports/2019/assets/fonts/AnoBlack-Regular.otf') format('opentype');
 }
 
+html, body {
+  /* overflow-x: hidden; */
+}
+
 /* html, body {
   font-size: 14px;
 } */
@@ -67,41 +71,59 @@ section {
 .more {
   display: none;
 }
-
-.bg-amarillo {
-  background-color: rgba(225, 197, 88, 1);
+.bg-azul {
+  background-color: #b1d9db;
   /* background-color: #EEB53C; */
 }
+.bg-azul-90 {
+  background-color: rgba(177, 217, 219, 0.9);
+  /* background-color: #EEB53C; */
+}
+.azul {
+  color: #b1d9db;
+  /* color: #EEB53C; */
+}
+.b--azul {
+  border-color: #b1d9db;
+  /* border-color: #EEB53C; */
+}
+.bg-amarillo {
+  background-color: #f3ca23;
+  /* background-color: #EEB53C; */
+}
+.bg-amarillo-90 {
+  background-color: rgba(243, 202, 35, 0.9);
+}
 .amarillo {
-  color: #e1c558;
+  color: #f3ca23;
   /* color: #EEB53C; */
 }
 .b--amarillo {
-  border-color: #e1c558;
+  border-color: #f3ca23;
   /* border-color: #EEB53C; */
 }
 .bg-aqua-verde {
-  background-color: rgba(189, 216, 196, 1);
+  background-color: #bbe9d0;
   /* background-color: #AEFFD8; */
 }
 .aqua-verde {
-  color: #bdd8c4;
+  color: #bbe9d0;
   /* color: #AEFFD8; */
 }
 .b--aqua-verde {
-  border-color: #bdd8c4;
+  border-color: #bbe9d0;
   /* border-color: #AEFFD8; */
 }
 .bg-mauve {
-  background-color: #d3bac0;
+  background-color: #c2aeb3;
   /* background-color: #B59DA4; */
 }
 .mauve {
-  color: #d3bac0;
+  color: #c2aeb3;
   /* color: #B59DA4; */
 }
 .b--mauve {
-  border-color: #d3bac0;
+  border-color: #c2aeb3;
   /* border-color: #B59DA4; */
 }
 .bg-brown-gray {
@@ -113,6 +135,25 @@ section {
 .b--brown-gray {
   border-color: #c2bcb0;
 }
+.bg-charcoal {
+  background-color: #a3a19e;
+}
+.charcoal {
+  color: #a3a19e;
+}
+.b--charcoal {
+  border-color: #a3a19e;
+}
+.bg-white {
+  background-color: #f3f2ef;
+}
+.white {
+  color: #f3f2ef;
+}
+.b--white {
+  border-color: #f3f2ef;
+}
+
 
 .sticky {
    position: -webkit-sticky;
@@ -139,6 +180,19 @@ section {
 .fit-top {
   object-position: top;
 }
+
+.link:focus {
+  outline: none;
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+.min-h-0 {
+  min-height: 0;
+}
+
 
 /* .fixed-bg-wide {
   background: url('/_annual-reports/2019/assets/img/bg-2-wide.svg') no-repeat center center fixed; background-size: cover;
@@ -167,4 +221,10 @@ section {
   .fixed-bg-right {
     background: url('/_annual-reports/2019/assets/img/bg-2-right.svg') no-repeat center center fixed; background-size: cover;
   } */
+}
+
+@media only screen and (max-width: 30em) {
+  #partners a {
+
+  }
 }

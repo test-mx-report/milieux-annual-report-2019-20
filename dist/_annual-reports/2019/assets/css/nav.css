@@ -1,0 +1,50 @@
+#menu {
+  right: -500px;
+  transition: all 0.3s ease-in;
+}
+
+.menu-open #menu {
+  right: 0px;
+}
+
+#toggleMenu #bottom, #toggleMenu #top {
+  -webkit-transform: rotate(0) translateX(0) translateY(0);
+  -moz-transform: rotate(0) translateX(0) translateY(0);
+  -o-transform: rotate(0) translateX(0) translateY(0);
+  -ms-transform: rotate(0) translateX(0) translateY(0);
+  transform: rotate(0) translateX(0) translateY(0);
+}
+#toggleMenu #bottom, #toggleMenu #middle, #toggleMenu #top {
+  -webkit-transition: .3s cubic-bezier(.215,.61,.355,1);
+  -moz-transition: .3s cubic-bezier(.215,.61,.355,1);
+  -o-transition: .3s cubic-bezier(.215,.61,.355,1);
+  -ms-transition: .3s cubic-bezier(.215,.61,.355,1);
+  transition: .3s cubic-bezier(.215,.61,.355,1);
+}
+
+.menu-open #toggleMenu #middle {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -o-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+}
+
+.menu-open #toggleMenu #bottom {
+    -webkit-transform: rotate(-45deg) translateX(-11px) translateY(-3px);
+    -moz-transform: rotate(-45deg) translateX(-11px) translateY(-3px);
+    -o-transform: rotate(-45deg) translateX(-11px) translateY(-3px);
+    -ms-transform: rotate(-45deg) translateX(-11px) translateY(-3px);
+    transform: rotate(-45deg) translateX(-11px) translateY(-3px);
+}
+
+.menu-open #toggleMenu #top {
+  -webkit-transform: rotate(45deg) translateX(2px) translateY(-2px);
+  -moz-transform: rotate(45deg) translateX(2px) translateY(-2px);
+  -o-transform: rotate(45deg) translateX(2px) translateY(-2px);
+  -ms-transform: rotate(45deg) translateX(2px) translateY(-2px);
+  transform: rotate(45deg) translateX(2px) translateY(-2px);
+}

@@ -3,5 +3,22 @@ path.link {
   stroke-width: 1px;
 }
 .node:not(:hover) .nodetext {
+  visibility: hidden;
+}
+
+.node .hidden {
   display: none;
+}
+
+.node {
+  cursor: pointer;
+}
+
+aside#cluster-highlights-sidebar, aside#project-highlights-sidebar {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+aside#cluster-highlights-sidebar.show, aside#project-highlights-sidebar.show {
+  opacity: 1;
 }

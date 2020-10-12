@@ -1,0 +1,231 @@
+{
+  "name": "Milieux - Cluster Highlights",
+  "img": "middle_circle.png",
+  "children": [
+    {
+      "cluster": "Technoculture, Art & Games",
+      "children": [
+        {
+          "parent": "Technoculture, Art & Games",
+          "parentUrl": "https://milieux.concordia.ca/technoculture-arts-and-games/",
+          "event": "Artist swap with Yaan Seznick from MICA Game Lab",
+          "description": "In March 2020, TAG welcomed Yann Seznec, Game Designer in Residence at the Maryland Institute College of Art Game Lab in Baltimore. Yann is an artist and musician whose work focuses on sound, music, physical interaction, games, and building new instruments. At TAG he gave a short Microtalk, participate in our weekly game night, gave a workshop and much more.<br/><br/>Read his reflections on his experiences on <a class='link black underline dim' href='https://tag.hexagram.ca/yann-seznec-on-his-tag-visit/' target='_blank'>TAG’s blog</a>.",
+          "media": {
+            "type": "image",
+            "src": "49727941966_4114f76349.jpg"
+          },
+          "img": "49727941966_4114f76349.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Technoculture, Art & Games",
+          "parentUrl": "https://milieux.concordia.ca/technoculture-arts-and-games/",
+          "event": "Play the Pain Workshop",
+          "description": "In October 2019, TAG faculty member Najmeh Khalili-Mahani organized a two-day community workshop to sketch ideas about how to use art and ICT as instruments for communicating and documenting the diversity of personal experiences of pain and resilience. It offered various art-therapeutic activities, and allowed participants to discuss the ethical, practical, and cultural tensions around the topic of digital healthcare in the context of treating pain and related anxieties.",
+          "media": {
+            "type": "video",
+            "host": "vimeo",
+            "id": "465584032"
+          },
+          "img": "playthepain.jpg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "cluster": "Speculative Life",
+      "children": [
+        {
+          "parent": "Speculative Life",
+          "parentUrl": "https://milieux.concordia.ca/speculative-life/",
+          "event": "Post/Colonial Port Cities: Place and Nonplace in the Ecotone",
+          "description": "<a class='link black underline dim' href='https://www.concordia.ca/finearts/research/urban-futures/events/ecotones-program.html' target='_blank'>Learn more about this program</a>",
+          "media": {
+            "type": "image",
+            "src": "ecotones.jpg"
+          },
+          "img": "ecotones.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Speculative Life",
+          "parentUrl": "https://milieux.concordia.ca/speculative-life/",
+          "event": "Immersive Manifesto",
+          "description": "In October 2019, TAG faculty member Najmeh Khalili-Mahani organized a two-day community workshop to sketch ideas about how to use art and ICT as instruments for communicating and documenting the diversity of personal experiences of pain and resilience. It offered various art-therapeutic activities, and allowed participants to discuss the ethical, practical, and cultural tensions around the topic of digital healthcare in the context of treating pain and related anxieties.",
+          "media": {
+            "type": "twitter",
+            "url": "https://twitter.com/Milieux_news/status/1263566245221355521",
+            "tweet": "<blockquote class='twitter-tweet dn'><p lang='en' dir='ltr'>♨️ Hot off the press: The Post-Immersive Manifesto<br><br>What&#39;s more trendy than &quot;immersive&quot; productions and experiences these days? The amazing <a href='https://twitter.com/iamzuuk?ref_src=twsrc%5Etfw'>@iamzuuk</a> <a href='https://twitter.com/MemoryDetritus?ref_src=twsrc%5Etfw'>@MemoryDetritus</a> and our director <a href='https://twitter.com/bartsimon?ref_src=twsrc%5Etfw'>@bartsimon</a> argue the term is overused and detrimental. So, now what?<a href='https://t.co/gYZ7A8zJZK'>https://t.co/gYZ7A8zJZK</a></p>&mdash; Milieux Institute (@Milieux_news) <a href='https://twitter.com/Milieux_news/status/1263566245221355521?ref_src=twsrc%5Etfw'>May 21, 2020</a></blockquote>"
+          },
+          "img": "immersive.jpg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "cluster": "Post Image",
+      "children": [
+        {
+          "parent": "Post Image",
+          "parentUrl": "https://milieux.concordia.ca/post-image-2/",
+          "event": "Artist Talk: Documentary Filmmaker Mia Donovan",
+          "description": "Mia Donovan, an award-winning Montreal-based filmmaker who received a BFA in Photography at Concordia University, recently spoke at Milieux during an event hosted by the Post Image Cluster.<br/><br/>Read the full story <a class='link black underline dim' href='https://milieux.concordia.ca/mia-donovan-on-documenting-vulnerable-subjects/' target='_blank'>here</a>.",
+          "media": {
+            "type": "image",
+            "src": "donovan.jpg"
+          },
+          "img": "donovan.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Post Image",
+          "parentUrl": "https://milieux.concordia.ca/post-image-2/",
+          "event": "Garnet Dirksen",
+          "description": "PhD student Garnet Dirksen was nominated for his photograph “John the Barber, Crowsnest Pass, A.B.” for the 2020 Scotiabank and New Generation Photography Awards. Dirksen took the photo in 2016 when he was attending the Gushul Residency Program in Blairmore, Alberta, administered by the University of Lethbridge. While he and his friend were in Crowsnest Pass, they stopped into a local barber’s shop for a haircut. Both the shop and the titular barber had a timeless quality.<br/><br/>Learn more <a class='link black underline dim' href='https://www.concordia.ca/news/stories/2020/03/18/5-concordians-are-longlisted-for-the-2020-scotiabank-and-new-generation-photography-awards.html' target='_blank'>here</a>.",
+          "media": {
+            "type": "image",
+            "src": "postscripts.jpg"
+          },
+          "img": "postscripts.jpg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "cluster": "Performance Arts (LePARC)",
+      "children": [
+        {
+          "parent": "Performance Arts (LePARC)",
+          "parentUrl": "https://milieux.concordia.ca/leparc-the-performing-arts-research-cluster/",
+          "event": "Power of the Spill",
+          "description": "The Power of the Spill used live video feedback, creative coding and movement-choreography to agitate the visible borders of objects and bodies. Performers Csenge Kolozsvari and Rodrigo Velasco question habitual divisions between life and matter. The piece starts with a video recording and movement-choreography that is live-processed using pixelation-effects similar to white noise, and projected back into the same space.",
+          "media": {
+            "type": "image",
+            "src": "spill.jpg"
+          },
+          "img": "spill.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Performance Arts (LePARC)",
+          "parentUrl": "https://milieux.concordia.ca/leparc-the-performing-arts-research-cluster/",
+          "event": "Voice & Performance Devising with Misha Penton",
+          "description": "Misha Penton is a soprano, performance creator, composer, director, and filmmaker based in the UK. In March, she traveled to Montreal to lead a multi-day voice and performance workshop with LePARC for Milieux members and the community.<br/><br/><a class='link black underline dim' href='https://milieux.concordia.ca/qa-with-visiting-artist-misha-penton/' target='_blank'>Read an interview with Penton</a>.",
+          "media": {
+            "type": "image",
+            "src": "misha.jpg"
+          },
+          "img": "misha.jpg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "cluster": "Participatory Media",
+      "children": [
+        {
+          "parent": "Participatory Media",
+          "parentUrl": "https://milieux.concordia.ca/participatory-media/",
+          "event": "ACT reports findings to CRTC",
+          "description": "On February 27, 2020, ACT went to Gatineau to report their findings to the CRTC hearings on Cell Phone affordability for Canadians. After writing two policy reports on cell phone affordability for seniors earlier in the year (May and October 2019), Dr. Kim Sawchuk, Dr. Catherine Middleton, and Constance Lafontaine went before the CRTC to present and discuss their findings and suggestions.<br/><br/>Read more <a class='link black underline dim' href='https://actproject.ca/act-presents-findings-on-cell-phone-affordability-for-canadian-older-adults-to-the-crtc/' target='_blank'>here</a>.",
+          "media": {
+            "type": "image",
+            "src": "crtc.jpg"
+          },
+          "img": "crtc.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Participatory Media",
+          "parentUrl": "https://milieux.concordia.ca/participatory-media/",
+          "event": "Arduino Collaboration",
+          "description": "Education Maker and PhD candidate Ivan Ruby is an experienced online teacher, and shared on Arduino EDUVision what happened when he launched an online initiative for students to learn programming and electronics using Arduino - while collaborating and getting hands-on.",
+          "img": "ivanruby.jpg",
+          "media": {
+            "type": "video",
+            "host": "facebook",
+            "id": "626049931330389"
+          },
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "cluster": "Media History",
+      "children": [
+        {
+          "parent": "Media History",
+          "parentUrl": "https://milieux.concordia.ca/media-history/",
+          "event": "Video Games and/as Theory",
+          "description": "Prof. Darren Wershler developed an undergraduate course that made active use of Milieux’s Residual Media Depot. The depot holds collections of material media and communication technologies, with a focus on early video game consoles from 1972 to 2002. Students, along with three research assistants who were Milieux members, engaged with the collections to reflect on how different technologies affect new media.",
+          "media": {
+            "type": "twitter",
+            "url": "https://twitter.com/residualmedia/status/1229965145021001728/photo/4",
+            "tweet": "<blockquote class='twitter-tweet dn'><p lang='en' dir='ltr'>In my Media Archaeology course, one large group is working on an “arcade edition” of <a href='https://twitter.com/alt254?ref_src=twsrc%5Etfw'>@alt254</a> and <a href='https://twitter.com/chouxsalad?ref_src=twsrc%5Etfw'>@chouxsalad</a>’s Octopad. Today they learned how to use a multimeter to map the pinout of a Neo-Geo controller cord (the base of their design). <a href='https://t.co/hMBMkLnMGI'>pic.twitter.com/hMBMkLnMGI</a></p>&mdash; Residual Media Depot (@residualmedia) <a href='https://twitter.com/residualmedia/status/1229965145021001728?ref_src=twsrc%5Etfw'>February 19, 2020</a></blockquote>"
+          },
+          "img": "residual.jpg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "cluster": "Indigenous Futures",
+      "children": [
+        {
+          "parent": "Indigenous Futures",
+          "parentUrl": "https://milieux.concordia.ca/indigenous-futures/",
+          "event": "AI Position Paper",
+          "description": "The position paper on Indigenous Protocol and Artificial Intelligence (IP AI), co-organized by Indigenous Futures Cluster leader Jason Edward Lewis, is a starting place for those who want to design and create AI from an ethical position that centers Indigenous concerns. It is an attempt to capture multiple layers of a discussion that happened over 20 months, across 20 timezones, during two workshops, and between Indigenous people (and a few non-Indigenous folks) from diverse communities in Aotearoa, Australia, North America, and the Pacific.<br/><br/>Read the paper <a class='link black underline dim' href='https://www.indigenous-ai.net/position-paper/' target='_blank'>here</a>",
+          "media": {
+            "type": "image",
+            "src": "aipositionpaper.jpg"
+          },
+          "img": "aipositionpaper.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Indigenous Futures",
+          "parentUrl": "https://milieux.concordia.ca/indigenous-futures/",
+          "event": "Research Centre Recognition",
+          "description": "In May 2020, the Indigenous Futures Cluster was recognized by Concordia as a Research Centre, based on its robust cross-disciplinary research program. It is an Indigenous-led research centre with a membership of 13 scholars and artists, supervising 31 undergraduate research assistants, 16 master’s students and 11 PhD students. <br/><br/>Learn more <a class='link black underline dim' href='https://milieux.concordia.ca/concordia-recognizes-indigenous-futures-research/' target='_blank'>here</a>.",
+          "media": {
+            "type": "image",
+            "src": "ifrc.jpg"
+          },
+          "img": "ifrc.jpg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "cluster": "Textiles & Materiality",
+      "children": [
+        {
+          "parent": "Textiles & Materiality",
+          "parentUrl": "https://milieux.concordia.ca/textiles-and-materiality/",
+          "event": "TextilesTradeTime Symposium",
+          "description": "TextilesTradeTime was a symposium and exhibition that took place on Oct. 18 and 19, and Nov. 29, 2019. TextilesTradeTime explores the histories, presents and futures of textiles across multiple sites, with a focus on Tiohtiá:ke | Montreal as a locus of trade across cultures, nations, fibres and moments. Artists and scholars within and beyond the university considered Indigenous textile traditions; the role of textiles in colonialism; local or global labour and environmental textile implications; artistic and technological innovations in textiles; and speculative spheres.<br/><br/>Learn more <a class='link black underline dim' href='http://textilestradetime.ca/' target='_blank'>here</a>.",
+          "media": {
+            "type": "video",
+            "host": "youtube",
+            "id": "cICvnpta5Ao"
+          },
+          "img": "tradetime.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Textiles & Materiality",
+          "parentUrl": "https://milieux.concordia.ca/textiles-and-materiality/",
+          "event": "Textile Quotes Workshop",
+          "description": "In June 2019, the Textiles & Materiality cluster taught participants how to design techniques and software basics required to embroider different text formats, fonts, and textures. They had the opportunity to embroider their own quote using the digital thread placement machine.",
+          "media": {
+            "type": "image",
+            "src": "textiles.jpg"
+          },
+          "img": "textiles.jpg",
+          "size": 40000
+        }
+      ]
+    }
+  ]
+}
