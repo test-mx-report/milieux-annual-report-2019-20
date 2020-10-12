@@ -71,7 +71,7 @@ section {
 .more {
   display: none;
 }
-.bg-azul {
+.bg-azul, .bg-azul-ns {
   background-color: #b1d9db;
   /* background-color: #EEB53C; */
 }
@@ -87,7 +87,7 @@ section {
   border-color: #b1d9db;
   /* border-color: #EEB53C; */
 }
-.bg-amarillo {
+.bg-amarillo, .bg-amarillo-ns {
   background-color: #f3ca23;
   /* background-color: #EEB53C; */
 }
@@ -102,7 +102,7 @@ section {
   border-color: #f3ca23;
   /* border-color: #EEB53C; */
 }
-.bg-aqua-verde {
+.bg-aqua-verde, .bg-aqua-verde-ns {
   background-color: #bbe9d0;
   /* background-color: #AEFFD8; */
 }
@@ -114,7 +114,7 @@ section {
   border-color: #bbe9d0;
   /* border-color: #AEFFD8; */
 }
-.bg-mauve {
+.bg-mauve, .bg-mauve-ns {
   background-color: #c2aeb3;
   /* background-color: #B59DA4; */
 }
@@ -126,7 +126,7 @@ section {
   border-color: #c2aeb3;
   /* border-color: #B59DA4; */
 }
-.bg-brown-gray {
+.bg-brown-gray, .bg-brown-gray-ns {
   background-color: rgba(194, 188, 176, 1);
 }
 .brown-gray {
@@ -135,7 +135,7 @@ section {
 .b--brown-gray {
   border-color: #c2bcb0;
 }
-.bg-charcoal {
+.bg-charcoal, .bg-charcoal-ns {
   background-color: #a3a19e;
 }
 .charcoal {
@@ -144,7 +144,7 @@ section {
 .b--charcoal {
   border-color: #a3a19e;
 }
-.bg-white {
+.bg-white, .bg-white-ns {
   background-color: #f3f2ef;
 }
 .white {
@@ -227,7 +227,13 @@ section {
   background-attachment: fixed!important;
 }
 
+
 @media only screen and (max-width: 30em) {
+  .bg-mauve-ns, .bg-amarillo-ns, .bg-aqua-verde-ns, .bg-azul-ns, .bg-white-ns, .bg-charcoal-ns, .bg-brown-gray-ns {
+    background-color: transparent;
+    /* background-color: #B59DA4; */
+  }
+
   .fixed-bg-left, .fixed-bg-right, .fixed-bg-wide {
     background-attachment: local!important;
   }
