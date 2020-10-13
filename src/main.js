@@ -94,7 +94,6 @@ window.onload = () => {
       document.getElementById('project-highlights-sidebar').style.opacity = null
       document.getElementById('cluster-highlights-info').classList.remove('hidden')
       document.getElementById('project-highlights-info').classList.remove('hidden')
-
     }
   })
 }
@@ -110,7 +109,7 @@ const navLinks = menu.getElementsByTagName('a')
 
 for (const link of navLinks) {
   link.onclick = (e) => {
-    e.preventDefault()
+    if (e.target.hash) e.preventDefault()
     const id = e.target.hash.split('#')[1]
     const el = document.getElementById(id)
     scrollToElement(el)
@@ -340,7 +339,7 @@ const data = {
         type: 'image',
         src: 'rubycoders.jpg'
       },
-      text: ''
+      text: '#RubyCoders working from home during COVID-19'
     },
     {
       title: 'Virtual Gallery Opening: <em>Reformatted</em>',
