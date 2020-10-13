@@ -100,6 +100,7 @@ function update () {
   // Append images
   var images = nodeEnter.append('a')
     .attr('data-micromodal-trigger', function (d) { if (d.event) return 'highlights-modal' })
+    .attr('data-type', 'cluster-highlights')
     .attr('data-parent', function (d) { return d.parent })
     .attr('data-parentUrl', function (d) { return d.parentUrl })
     .attr('data-event', function (d) { return d.event })
@@ -118,6 +119,7 @@ function update () {
     .style('font-size', '1rem')
     .style('font-weight', 'bold')
     .attr('fill', '#130C0E')
+    .on('click', function (d, i) { if (d.url) window.open(d.url, '_blank') })
   // make the image grow a little on mouse over and add the text details on click
   // var setEvents = images
   images
@@ -125,7 +127,7 @@ function update () {
   //  .on('click', function (d) {
   //  })
 
-    .on('mouseover', function (d, i, j, k) {
+    .on('mouseenter', function (d, i, j, k) {
       // select element in current context
       if (d.event) {
         d3.select(this)
@@ -137,6 +139,7 @@ function update () {
         d3.select('#cluster-highlights-sidebar').classed('show', true)
         d3.select('#cluster-highlights-name').text(d.event)
         d3.select('#cluster-highlights-member').text(d.parent)
+        d3.select('#cluster-highlights-info').classed('hide', true)
       }
     })
   // set back
@@ -148,6 +151,7 @@ function update () {
         .attr('height', 50)
         .attr('width', 50)
       d3.select('#cluster-highlights-sidebar').classed('show', false)
+      d3.select('#cluster-highlights-info').classed('hide', false)
       // if (d.cluster) d3.select('#cluster-highlights-member').text('')
       // if (d.parent) d3.select('#cluster-highlights-member').text('')
       // if (d.event) d3.select('#cluster-highlights-name').text('')

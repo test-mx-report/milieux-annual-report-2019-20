@@ -4,6 +4,7 @@
   "children": [
     {
       "cluster": "Technoculture, Art & Games",
+      "url": "https://milieux.concordia.ca/technoculture-arts-and-games/",
       "children": [
         {
           "parent": "Technoculture, Art & Games",
@@ -34,6 +35,7 @@
     },
     {
       "cluster": "Speculative Life",
+      "url": "https://milieux.concordia.ca/speculative-life/",
       "children": [
         {
           "parent": "Speculative Life",
@@ -64,6 +66,7 @@
     },
     {
       "cluster": "Post Image",
+      "url": "https://milieux.concordia.ca/post-image-2/",
       "children": [
         {
           "parent": "Post Image",
@@ -93,6 +96,7 @@
     },
     {
       "cluster": "Performance Arts (LePARC)",
+      "url": "https://milieux.concordia.ca/leparc-the-performing-arts-research-cluster/",
       "children": [
         {
           "parent": "Performance Arts (LePARC)",
@@ -122,6 +126,7 @@
     },
     {
       "cluster": "Participatory Media",
+      "url": "https://milieux.concordia.ca/participatory-media/",
       "children": [
         {
           "parent": "Participatory Media",
@@ -152,6 +157,7 @@
     },
     {
       "cluster": "Media History",
+      "url": "https://milieux.concordia.ca/media-history/",
       "children": [
         {
           "parent": "Media History",
@@ -170,6 +176,7 @@
     },
     {
       "cluster": "Indigenous Futures",
+      "url": "https://milieux.concordia.ca/indigenous-futures/",
       "children": [
         {
           "parent": "Indigenous Futures",
@@ -199,6 +206,7 @@
     },
     {
       "cluster": "Textiles & Materiality",
+      "url": "https://milieux.concordia.ca/textiles-and-materiality/",
       "children": [
         {
           "parent": "Textiles & Materiality",

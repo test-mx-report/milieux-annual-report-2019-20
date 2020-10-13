@@ -124,7 +124,9 @@ section {
 }
 .b--mauve {
   border-color: #c2aeb3;
-  /* border-color: #B59DA4; */
+}
+.bg-mauve-90 {
+  background-color: rgba(194, 174, 179, 0.9);
 }
 .bg-brown-gray, .bg-brown-gray-ns {
   background-color: rgba(194, 188, 176, 1);

@@ -49,20 +49,30 @@ window.onload = () => {
     onShow: (modal, body, e) => {
       document.getElementsByTagName('html')[0].style.overflow = 'hidden'
       document.body.style.overflow = 'none'
-      console.info(`${modal.id} is shown`)
-      document.getElementById('cluster-highlights-sidebar').style.opacity = '1'
-      document.getElementById('project-highlights-sidebar').style.opacity = '1'
-      console.log(modal)
-      console.log(e)
+      // console.info(`${modal.id} is shown`)
       const dataset = e.target.parentNode.dataset
-      console.log(dataset)
+      const modalContainer = document.getElementById('highlights-modal-container')
+      if (dataset.type === 'cluster-highlights') {
+        document.getElementById('cluster-highlights-sidebar').style.opacity = '1'
+        document.getElementById('cluster-highlights-info').classList.add('hidden')
+        modalContainer.classList.remove('bg-mauve-90')
+        modalContainer.classList.add('bg-azul-90')
+      } else if (dataset.type === 'project-highlights') {
+        document.getElementById('project-highlights-sidebar').style.opacity = '1'
+        document.getElementById('project-highlights-info').classList.add('hidden')
+        modalContainer.classList.remove('bg-azul-90')
+        modalContainer.classList.add('bg-mauve-90')
+      }
+      // console.log(modal.id)
+      // console.log(e)
+      // console.log(dataset)
       document.getElementById('highlights-modal-parent-title').innerHTML = dataset.parent
       document.getElementById('highlights-modal-parent-url').href = dataset.parentUrl
       document.getElementById('highlights-modal-event-title').innerHTML = dataset.event
       // document.getElementById('highlights-modal-image').src = imgDir + dataset.image
       document.getElementById('highlights-modal-description').innerHTML = dataset.description
       const media = JSON.parse(dataset.media)
-      console.log(media)
+      // console.log(media)
       if (typeof media !== 'undefined') {
         if (media.type === 'video') {
           setVideo('highlights-modal', media.host, media.id)
@@ -72,16 +82,19 @@ window.onload = () => {
           setImage('highlights-modal', media.src)
         }
       }
-      document.getElementById('modal-container').scrollTop = 0
+      document.getElementById('highlights-modal-outer').scrollTop = 0
 
       // for (const i in document.links) document.links[i].onfocus = document.links[i].blur
     },
-    onClose: (modal) => {
+    onClose: (modal, body, e) => {
       document.getElementsByTagName('html')[0].style.overflow = 'auto'
       document.body.style.overflow = 'auto'
-      console.info(`${modal.id} is hidden`)
+      // console.info(`${modal.id} is hidden`)
       document.getElementById('cluster-highlights-sidebar').style.opacity = null
       document.getElementById('project-highlights-sidebar').style.opacity = null
+      document.getElementById('cluster-highlights-info').classList.remove('hidden')
+      document.getElementById('project-highlights-info').classList.remove('hidden')
+
     }
   })
 }
