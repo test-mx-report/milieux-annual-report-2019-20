@@ -409,8 +409,13 @@ section {
   background-attachment: fixed!important;
 }
 
-
+#highlights-modal-container {
+  min-width: 30em;
+}
 @media only screen and (max-width: 30em) {
+  #highlights-modal-container {
+    min-width: 100%;
+  }
   .bg-mauve-ns, .bg-amarillo-ns, .bg-aqua-verde-ns, .bg-azul-ns, .bg-white-ns, .bg-charcoal-ns, .bg-brown-gray-ns {
     background-color: transparent;
     /* background-color: #B59DA4; */
