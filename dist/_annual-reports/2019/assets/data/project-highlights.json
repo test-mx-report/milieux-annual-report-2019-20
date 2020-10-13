@@ -17,6 +17,28 @@
           },
           "img": "aiposter.jpg",
           "size": 40000
+        },
+        {
+          "parent": "Machine Agencies",
+          "parentUrl": "https://machineagencies.org/",
+          "event": "Machine Menagerie",
+          "media": {
+            "type": "image",
+            "src": "machines1.jpg"
+          },
+          "img": "machines1.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Machine Agencies",
+          "parentUrl": "https://machineagencies.org/",
+          "event": "‘Yelling at Computers’ Poster",
+          "media": {
+            "type": "image",
+            "src": "machines2.jpg"
+          },
+          "img": "machines2.jpg",
+          "size": 40000
         }
       ]
     },
@@ -34,6 +56,68 @@
             "src": "bacterial.jpg"
           },
           "img": "bacterial.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "BioLab",
+          "parentUrl": "https://speculativelifebiolab.com/",
+          "event": "Myosculpture Workshop Part I",
+          "media": {
+            "type": "image",
+            "src": "biolab1.jpg"
+          },
+          "img": "biolab1.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "BioLab",
+          "parentUrl": "https://speculativelifebiolab.com/",
+          "event": "Myosculpture Workshop Part II",
+          "media": {
+            "type": "image",
+            "src": "biolab2.jpg"
+          },
+          "img": "biolab2.jpg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "project": "Waterways",
+      "url": "https://speculativelife.com/montreal-waterways/",
+      "children": [
+        {
+          "parent": "Waterways",
+          "parentUrl": "https://speculativelife.com/montreal-waterways/",
+          "event": "Ghost River Project",
+          "description": "Montreal Waterways is an Ethnographic research and creation group based out of the Ethnography Lab at Milieux's Speculative Life Research Cluster. In January 2020, they launched the Ghost River Project: an interactive map of one of Montreal’s lost rivers. The project pieces together the pasts, presents, and possible futures of Saint Pierre, a major waterway that cut across the West of the island for much of its history. Canalized and buried underground throughout the 18th, 19th, and 20th centuries, the river now exists as a ghost, haunting the city’s landscape, infrastructure, and historical imagination.<br/><br/>See the project <a class='link black underline dim' href='https://ethnographylabconcordia.ca/ghostriver' target='_blank'>here</a>",
+          "media": {
+            "type": "image",
+            "src": "waterways.jpg"
+          },
+          "img": "waterways.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Waterways",
+          "parentUrl": "https://speculativelife.com/montreal-waterways/",
+          "event": "The Big Flush",
+          "media": {
+            "type": "image",
+            "src": "waterways1.jpg"
+          },
+          "img": "waterways1.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Waterways",
+          "parentUrl": "https://speculativelife.com/montreal-waterways/",
+          "event": "St. Pierre River",
+          "media": {
+            "type": "image",
+            "src": "waterways2.jpg"
+          },
+          "img": "waterways2.jpg",
           "size": 40000
         }
       ]
@@ -53,6 +137,28 @@
           },
           "img": "liquidperceptions.jpg",
           "size": 40000
+        },
+        {
+          "parent": "Immersive Realities Lab",
+          "parentUrl": "https://postimage.hexagram.ca/research/vr/",
+          "event": "Liquid Perceptions",
+          "media": {
+            "type": "image",
+            "src": "vrlab1.jpg"
+          },
+          "img": "vrlab1.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Immersive Realities Lab",
+          "parentUrl": "https://postimage.hexagram.ca/research/vr/",
+          "event": "Immersive Realities Lab",
+          "media": {
+            "type": "image",
+            "src": "vrlab2.jpg"
+          },
+          "img": "vrlab2.jpg",
+          "size": 40000
         }
       ]
     },
@@ -71,6 +177,29 @@
             "id": "465583957"
           },
           "img": "musicmaking.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Education Makers",
+          "parentUrl": "https://www.educationmakers.ca/",
+          "event": "Post-Arduino Day Celebration",
+          "media": {
+            "type": "video",
+            "host": "facebook",
+            "id": "285238069545469"
+          },
+          "img": "arduinoday.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Education Makers",
+          "parentUrl": "https://www.educationmakers.ca/",
+          "event": "Tactile Sound Workshop",
+          "media": {
+            "type": "image",
+            "src": "edumaker.jpg"
+          },
+          "img": "edumaker.jpg",
           "size": 40000
         }
       ]

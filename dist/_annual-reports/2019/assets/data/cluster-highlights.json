@@ -30,6 +30,19 @@
           },
           "img": "playthepain.jpg",
           "size": 40000
+        },
+        {
+          "parent": "Technoculture, Art & Games",
+          "parentUrl": "https://milieux.concordia.ca/technoculture-arts-and-games/",
+          "event": "Immersive Manifesto",
+          "description": "In October 2019, TAG faculty member Najmeh Khalili-Mahani organized a two-day community workshop to sketch ideas about how to use art and ICT as instruments for communicating and documenting the diversity of personal experiences of pain and resilience. It offered various art-therapeutic activities, and allowed participants to discuss the ethical, practical, and cultural tensions around the topic of digital healthcare in the context of treating pain and related anxieties.",
+          "media": {
+            "type": "twitter",
+            "url": "https://twitter.com/Milieux_news/status/1263566245221355521",
+            "tweet": "<blockquote class='twitter-tweet dn'><p lang='en' dir='ltr'>♨️ Hot off the press: The Post-Immersive Manifesto<br><br>What&#39;s more trendy than &quot;immersive&quot; productions and experiences these days? The amazing <a href='https://twitter.com/iamzuuk?ref_src=twsrc%5Etfw'>@iamzuuk</a> <a href='https://twitter.com/MemoryDetritus?ref_src=twsrc%5Etfw'>@MemoryDetritus</a> and our director <a href='https://twitter.com/bartsimon?ref_src=twsrc%5Etfw'>@bartsimon</a> argue the term is overused and detrimental. So, now what?<a href='https://t.co/gYZ7A8zJZK'>https://t.co/gYZ7A8zJZK</a></p>&mdash; Milieux Institute (@Milieux_news) <a href='https://twitter.com/Milieux_news/status/1263566245221355521?ref_src=twsrc%5Etfw'>May 21, 2020</a></blockquote>"
+          },
+          "img": "immersive.jpg",
+          "size": 40000
         }
       ]
     },
@@ -47,6 +60,18 @@
             "src": "ecotones.jpg"
           },
           "img": "ecotones.jpg",
+          "size": 40000
+        },
+        {
+          "parent": "Speculative Life",
+          "parentUrl": "https://milieux.concordia.ca/speculative-life/",
+          "event": "“Hopeful Resilience” by Orit Halpern",
+          "description": "[Diagram from C.S. Holling, “Resilience and Stability of Ecological Systems,” demonstrating theoretical examples of various reproduction curves (a, c, and e) and their derivation from the contributions of fecundity and mortality (b, d, and f).]<br/><br/>In January 2020, Speculative Life co-director Orit Halpern published an article in Accumulation, a project by Daniel A. Barber and e-flux Architecture, produced in cooperation with the Princeton Environmental Institute at Princeton University and the Speculative Life Lab. In an age of massive accumulation, Halpern notes that a turn toward the concept of resilience since at least the 1970s offers hope for the planners, entrepreneurs, policy makers, and environmentalists that shape systems’ ability to absorb shock and continue functioning.<br/><br/>Read the article <a class='link black underline dim' href='https://www.e-flux.com/architecture/accumulation/96421/hopeful-resilience/' target='_blank'>here</a>.",
+          "media": {
+            "type": "image",
+            "src": "hopeful.jpg"
+          },
+          "img": "hopeful.jpg",
           "size": 40000
         }
       ]
@@ -131,7 +156,7 @@
           "parent": "Participatory Media",
           "parentUrl": "https://milieux.concordia.ca/participatory-media/",
           "event": "Arduino Collaboration",
-          "description": "Education Maker and PhD candidate Ivan Ruby is an experienced online teacher, and shared on Arduino EDUVision what happened when he launched an online initiative for students to learn programming and electronics using Arduino - while collaborating and getting hands-on.",
+          "description": "Education Maker and PhD candidate Ivan Ruby is an experienced online teacher, and shared on Arduino EDUVision what happened when he launched an online initiative for students to learn programming and electronics using Arduino - while collaborating and getting hands-on.<br/><br/>Learn more about Ruby’s experiences teaching hands-on learning <a class='link black underline dim' href='https://milieux.concordia.ca/ivan-rubys-summer-of-teaching-design-during-covid-19/' target='_blank'>here</a>.",
           "img": "ivanruby.jpg",
           "media": {
             "type": "video",
