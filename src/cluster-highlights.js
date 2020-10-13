@@ -104,7 +104,7 @@ function update () {
     .attr('data-parent', function (d) { return d.parent })
     .attr('data-parentUrl', function (d) { return d.parentUrl })
     .attr('data-event', function (d) { return d.event })
-    .attr('data-description', function (d) { return d.description })
+    .attr('data-description', function (d) { if (d.description) return d.description; else return '' })
     .attr('data-media', function (d) { return JSON.stringify(d.media) })
     .append('svg:image')
     .attr('xlink:href', function (d) { if (d.img) return imgDir + d.img.replace('.jpg', '_circle.png') })
