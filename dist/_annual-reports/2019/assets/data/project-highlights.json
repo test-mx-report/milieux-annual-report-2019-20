@@ -4,6 +4,7 @@
   "children": [
     {
       "project": "Machine Agencies",
+      "url": "https://machineagencies.org/",
       "children": [
         {
           "parent": "Machine Agencies",
@@ -21,6 +22,7 @@
     },
     {
       "project": "BioLab",
+      "url": "https://speculativelifebiolab.com/",
       "children": [
         {
           "parent": "BioLab",
@@ -38,6 +40,7 @@
     },
     {
       "project": "Immersive Realities Lab",
+      "url": "https://postimage.hexagram.ca/research/vr/",
       "children": [
         {
           "parent": "Immersive Realities Lab",
@@ -55,6 +58,7 @@
     },
     {
       "project": "Education Makers",
+      "url": "https://www.educationmakers.ca/",
       "children": [
         {
           "parent": "Education Makers",
